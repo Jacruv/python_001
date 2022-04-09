@@ -1,11 +1,11 @@
 def problema():
-    print('X+5=10 \n¿Cuánto vale X?')
+    print('X+5=10 \nEscribe tu respuesta a continuación\n¿Cuánto vale X?')
 
 def verficar_respuesta(x):
-    if x+5==10:
-        print('Es correcto!')
+    while x+5!=10:
+        int(input('Intentalo de nuevo:   ')) 
     else:
-        print('Vuelve a intentar')
+        print('Felicidades')
 
 problema()
 x = int(input())
